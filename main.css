@@ -11,7 +11,7 @@ body{
     max-width: 1440px;
     margin: auto;
 }
-nav, .one,.four, .five,.six, footer{
+nav, .one,.four, .five,.five_b,.six, footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
@@ -224,13 +224,11 @@ nav ul li{
     letter-spacing: 0em;
     color: #5A5A5A;
 }
-.four button{
-    height: 44px;
+.four a{
+    text-decoration: none;
     width: 170px;
-    left: 529px;
-    top: 776px;
     border-radius: 12px;
-    padding: 2px 20px 2px 20px;
+    padding: 8px 20px 8px 20px;
     background-color: #0145FE;
     color: white;
     border: none;
@@ -238,8 +236,6 @@ nav ul li{
     font-size: 18px;
     font-weight: 400;
     line-height: 40px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 .five{
     display: flex;
@@ -254,7 +250,7 @@ nav ul li{
 .five hr{
     border: 1px solid #5B9FFF
 }
-.five h1,.six h1{
+.five h1,.five_b h1, .six h1{
     font-family: Roboto Mono;
     font-size: 32px;
     font-weight: 700;
@@ -318,7 +314,7 @@ nav ul li{
     line-height: 24px;
     text-transform: uppercase;
     margin-top: 1rem;
-    width: 75%;
+    width: 85%;
 }
 .f-right main p{
     font-family: 'Roboto Mono';
@@ -435,6 +431,33 @@ nav ul li{
     width: 245px;
     color: #fff;
     margin-top: 3rem;
+}
+.five_b{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.five_b header{
+    display: flex;
+    justify-content: space-between;
+}
+select{
+    padding: 7px 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    color: #0145FE;
+    border: 1px solid #0145FE;
+}
+.five_b main{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.five_b main img{
+    width: 565px;
 }
 .six{
     padding-top: 5rem;
