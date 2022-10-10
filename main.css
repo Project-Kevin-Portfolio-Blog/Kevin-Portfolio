@@ -11,7 +11,7 @@ body{
     max-width: 1440px;
     margin: auto;
 }
-nav, .one,.four, .five,.five_b,.six, footer{
+nav, .one,.three,.two_1,.two_2,.four, .five,.five_b,.six, footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
@@ -128,9 +128,7 @@ nav ul li{
     position: relative;
     padding-top: 7rem;
     padding-bottom: 7rem;
-    padding-inline: 5rem;
     background-image:url(./images/bg-b.png);
-    
 }
 .bg{
     position: absolute;
@@ -143,7 +141,7 @@ nav ul li{
 .two_1,.two_2{
     display: flex;
     gap: 3rem;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -154,7 +152,7 @@ nav ul li{
     font-weight: 500;
     line-height: 21px;
     text-align: center;
-    padding: 2rem 2rem 2rem 2em;
+    /* padding: 2rem 2rem 2rem 0em; */
 }
 .two div img{
     margin-bottom: 20px;
