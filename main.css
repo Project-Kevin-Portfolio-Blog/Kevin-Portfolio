@@ -313,8 +313,12 @@ nav ul li{
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-    margin-top: 1rem;
+    margin-top: 0rem;
     width: 85%;
+}
+.f-right main img{
+    width: 260px;
+    height: 180px;
 }
 .f-right main p{
     font-family: 'Roboto Mono';
@@ -322,7 +326,7 @@ nav ul li{
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    margin-top: 1rem;
+    margin-top: .6rem;
     word-spacing: 3px;
     width: 95%;
 }
