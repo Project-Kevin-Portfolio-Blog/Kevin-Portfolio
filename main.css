@@ -7,10 +7,11 @@
     font-family: hanson;
     src: url(./fonts/Hanson-Bold_28ef9370662e758bd08e61f45c3c69b8.otf);
 }
-/* body{
-
-} */
-nav, .one,.four{
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+nav, .one,.four, .five,.six, footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
@@ -60,12 +61,17 @@ nav ul li{
     flex-direction: column;
     width: 50%;
     gap: 20px;
+  background-image: url(./images/Ellipse\ 2.png);
+  background-repeat: no-repeat;
 }
 .one main{
     width: 50%;
     display: flex;
     justify-content: flex-start;
-    transform: translateX(-140px);
+    transform: translateX(-60px);
+    background-image: url(./images/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top 2rem right -5rem;
 }
 .one button{
     width: 256px;
@@ -185,6 +191,9 @@ nav ul li{
     flex-direction: column;
     gap: 4rem;
     padding-top: 7rem;
+    background-image: url(./images/Ellipse\ 3.png),url(./images/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-position: bottom -2rem left 0 , right 0 top 2rem;
 }
 .four header{
     font-family: Roboto Mono;
@@ -197,7 +206,7 @@ nav ul li{
 }
 .four main{
     display: flex;
-    gap: 2rem;
+    gap: 5em;
 }
 .four main header{
     width: 30%;
@@ -207,11 +216,11 @@ nav ul li{
     height: 617px;
 }
 .four main article{
-    width: 70%;
+    width: 65%;
     font-family: Roboto Mono;
     font-size: 18px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 37px;
     letter-spacing: 0em;
     color: #5A5A5A;
 }
@@ -232,3 +241,298 @@ nav ul li{
     letter-spacing: 0em;
     text-align: left;
 }
+.five{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #00004A;
+    color: #fff;
+}
+.five hr{
+    border: 1px solid #5B9FFF
+}
+.five h1,.six h1{
+    font-family: Roboto Mono;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.4em;
+    margin-bottom: 2rem;
+}
+.f-top{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.f-top article{
+    display: flex;
+    gap: 4rem;
+}
+.f-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+.f-left h2{
+    font-family: Roboto Mono;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 20px 0;
+}
+.f-left p{
+    margin-top: 10px;
+    font-family: Roboto Mono;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 95%;
+}
+.f-left a{
+    color: #0145FE;
+    text-decoration: none;
+    font-family: Roboto Mono;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.f-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+.f-right main{
+    display: flex;
+    gap: 20px;
+}
+.f-right main h4{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    width: 75%;
+}
+.f-right main p{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 1rem;
+    word-spacing: 3px;
+    width: 95%;
+}
+.five .topics{
+    background-color: #97DBFF;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    color: #0145FE;
+}
+.f-left .topics{
+    font-size: 16px;
+    line-height: 42px;
+    margin-right: 8px;
+    border-radius: 20px;
+    padding: 6px 10px;
+}
+.f-right .topics,.f-bottom .topics{
+    font-size: 8px;
+    line-height: 42px;
+    margin-right: 1px;
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+.date{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+}
+.f-right .date,.f-bottom .date{
+    font-size: 10px;
+    float: right;
+}
+.f-left .date{
+    float: right;
+    font-size: 18px;
+}
+.f-bottom header{
+    display: flex;
+    justify-content: space-between;
+}
+.f-bottom header span{
+    background-color: #97DBFF;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    color: #0145FE;
+    font-size: 16px;
+    line-height: 42px;
+    margin-left: 8px;
+    border-radius: 20px;
+    padding: 6px 10px;
+}
+.f-bottom select{
+    padding: 7px 10px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: #00004A;
+    color: #fff;
+}
+.f-bottom option{
+    padding: 3px 8px;
+    margin-bottom: 3px;
+}
+.f-bottom article{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.f-bottom main{
+    display: flex;
+    gap: 8rem;
+    justify-content: space-evenly;
+}
+.f-bottom main .latest_news{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 1rem;
+}
+.f-bottom main .latest_news h4{
+    font-family: Roboto Mono;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 1.3rem;
+    width: 90%;
+}
+.f-bottom main .latest_news p{
+    font-family: Roboto Mono;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.Blog_page{
+    text-decoration: none;
+    background: linear-gradient(0deg, #0145FE, #0145FE),
+    linear-gradient(0deg, #F1FFFF, #F1FFFF);
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-family: Roboto Mono;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    width: 245px;
+    color: #fff;
+    margin-top: 3rem;
+}
+.six{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background: #E3E1F2;
+    ;
+}
+.six h1{
+    color: #000086;
+}
+.six main{
+    display: flex;
+    gap: 5rem;
+}
+.six main div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 33.33%;
+    background: #F1FFFF;
+    padding: 20px 10px;
+    border-radius: 8px;
+    margin-bottom: 5rem;
+}
+.six h2{
+    font-family: Roboto Mono;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.six p{
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+}
+footer{
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    background-color: #00004A;
+    background-image: url(./images/Ellipse\ 5.png);
+    background-position: top 0 right 0 ;
+    background-repeat: no-repeat;
+}
+footer h3{
+    font-family: Roboto Mono;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    color: #B5F9FF;
+    margin-bottom: 1rem;
+}
+footer h1{
+    font-family: Hanson;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 37px;
+    color: #B5F9FF;
+    margin-bottom: 9rem;
+}
+footer div{
+    display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   color: #B5F9FF;
+   margin-bottom: 1.5rem;
+}
+footer div p{
+    width: 36%;
+    font-family: Roboto Mono;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+footer span{
+    margin-left: 20px;
+}
+footer small{
+    font-size: 14px;
+    transform: translateX(1rem);
+    border: 1px solid #B5F9FF;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+footer li{
+    font-family: Roboto Mono;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #B5F9FF;
+}
+
+
