@@ -27,6 +27,16 @@ nav{
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
+    padding-right: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    font-size: 22px;
+    transition: 0.5s linear 0.1s;
+    font-weight: 900;
 }
 nav ul{
     display: flex;
@@ -460,6 +470,13 @@ select{
 }
 .five_b main img{
     width: 565px;
+    margin-bottom: 7px;
+}
+.five_b main span{
+    font-family: Roboto Mono;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 18px;
 }
 .six{
     padding-top: 5rem;

@@ -7,14 +7,14 @@
     font-family: hanson;
     src: url(./fonts/Hanson-Bold_28ef9370662e758bd08e61f45c3c69b8.otf);
 }
-body{
-    max-width: 1440px;
-    margin: auto;
-}
-nav,.one,.two,.six, footer{
+nav,header,.one,.six,footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
 }
 #logo1{
     width: 171.77px;
@@ -27,8 +27,7 @@ nav{
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
-    margin-top: 1rem;
-    padding-right: 1rem;
+    padding-right: 1.3rem;
 }
 nav a{
     text-decoration: none;
@@ -62,95 +61,84 @@ nav ul li{
     width: 11px;
     height: 11px;
 }
-.one{
+header h1{
     margin-top: 2rem;
-    margin-bottom: 4rem;
-}
-.one h1, .two h1{
     font-family: Roboto Mono;
     font-size: 32px;
     font-weight: 700;
     line-height: 42px;
     letter-spacing: 0.6em;
-    color: #00004a;
-    margin-bottom: 3rem;
+    color: #00004A;
+}
+.sort_container{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+select{
+    padding: 7px 10px;
+    width: 70px;
+    border-radius: 20px;
+    color: #0145FE;
+    border: 1px solid #0145FE;
+}
+.sort{
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #0145FE;
+}
+.topics{
+    background-color: #97DBFF;
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #0145FE;
+    line-height: 42px;
+    margin-right: 1px;
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+.date{
+    float: right;
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+}
+.one h4{
+    font-family: Roboto Mono;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 .one p{
     font-family: Roboto Mono;
     font-size: 18px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 30px;
     color: #5a5a5a;
-    text-align: justify;
 }
-.iframe{
+.one article{
     display: flex;
-    justify-content: center;
+    gap: 4rem;
 }
-.brands{
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    padding-top: 9rem;
-    padding-bottom: 6rem;
-    font-family: Roboto Mono;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 53px;
-    letter-spacing: 0.4em;
-    color: #00004a;
-}
-.brands h1{
-    text-align: left;
-    width: 100%;
-}
-.brands main{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 7rem;
-}
-.brands main img{
-    width: 275px;
-}
-.one div {
-    margin: 2rem 0;
+.one main{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
-.one .img::after{
-    content: 'Photo from Blockchain conference 2.0';
-    text-align: left;
-    padding-top: 5px;
-}
-.two{
-    margin-top: 2rem;
+.one{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-}
-.two header{
-    display: flex;
-    justify-content: space-between;
-}
-select{
-    padding: 7px 10px;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    color: #0145FE;
-    border: 1px solid #0145FE;
-}
-.two main{
-    display: flex;
-    gap: 5rem;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-}
-.two main img{
-    width: 565px;
+    gap: 4rem;
+    margin-bottom: 6rem;
 }
 .six{
     padding-top: 5rem;
