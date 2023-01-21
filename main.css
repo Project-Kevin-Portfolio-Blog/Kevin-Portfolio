@@ -11,7 +11,7 @@ body{
     max-width: 1440px;
     margin: auto;
 }
-nav, .one,.three,.two_1,.two_2,.four, .five,.five_b,.six, footer{
+nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
@@ -44,8 +44,8 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 .chat{
     height: 60px;
@@ -224,6 +224,7 @@ nav ul li{
     height: 617px;
 }
 .four main article{
+    flex-direction: column;
     width: 65%;
     font-family: Roboto Mono;
     font-size: 18px;
@@ -255,10 +256,10 @@ nav ul li{
     background: #00004A;
     color: #fff;
 }
-.five hr{
+/* .five hr{
     border: 1px solid #5B9FFF
-}
-.five h1,.five_b h1, .six h1{
+} */
+.mentor h1,.five h1,.five_b h1, .six h1{
     font-family: Roboto Mono;
     font-size: 32px;
     font-weight: 700;
@@ -266,7 +267,41 @@ nav ul li{
     letter-spacing: 0.4em;
     margin-bottom: 2rem;
 }
-.f-top{
+.mentor{
+    margin-top: 3rem;
+    padding-top: 4rem;
+    background-color: #000086;
+    background-image: url(./images/Ellipse\ 5.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    color: white;
+    padding-bottom: 4rem;
+}
+.mentor main{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.mentor p{
+    font-family: Roboto Mono;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.mentor a{
+    text-decoration: none;
+    font-family: Roboto Mono;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    color: #00004A;
+    background-color: white;
+    padding: 10px 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+/* .f-top{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -303,8 +338,8 @@ nav ul li{
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
-}
-.f-right{
+} */
+/* .f-right{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -337,22 +372,24 @@ nav ul li{
     margin-top: .6rem;
     word-spacing: 3px;
     width: 95%;
-}
-.five .topics{
+} */
+/* .five .topics{
     background-color: #97DBFF;
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 700;
     color: #0145FE;
-}
-.f-left .topics{
+} */
+/* .f-left .topics{
     font-size: 16px;
     line-height: 42px;
     margin-right: 8px;
     border-radius: 20px;
     padding: 6px 10px;
-}
-.f-right .topics,.f-bottom .topics{
+} */
+
+/* eliminate the f right topics */
+/* .f-right .topics,.f-bottom .topics{
     font-size: 8px;
     line-height: 42px;
     margin-right: 1px;
@@ -364,16 +401,18 @@ nav ul li{
     font-style: normal;
     font-weight: 700;
     line-height: 13px;
-}
-.f-right .date,.f-bottom .date{
+} */
+
+/* eliminate the f right topics */
+/* .f-right .date,.f-bottom .date{
     font-size: 10px;
     float: right;
-}
-.f-left .date{
+} */
+/* .f-left .date{
     float: right;
     font-size: 18px;
-}
-.f-bottom header{
+} */
+/* .f-bottom header{
     display: flex;
     justify-content: space-between;
 }
@@ -440,19 +479,10 @@ nav ul li{
     font-size: 18px;
     font-weight: 700;
     line-height: 40px;
+    text-align: center;
     width: 245px;
     color: #fff;
     margin-top: 3rem;
-}
-.five_b{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-.five_b header{
-    display: flex;
-    justify-content: space-between;
 }
 select{
     padding: 7px 10px;
@@ -461,8 +491,18 @@ select{
     border-radius: 20px;
     color: #0145FE;
     border: 1px solid #0145FE;
+} */
+/* .five_b{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
-.five_b main{
+.five_b header{
+    display: flex;
+    justify-content: space-between;
+} */
+/* .five_b main{
     display: flex;
     gap: 5rem;
     justify-content: space-between;
@@ -477,7 +517,7 @@ select{
     font-size: 14px;
     font-weight: 200;
     line-height: 18px;
-}
+} */
 .six{
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -516,7 +556,7 @@ select{
     font-weight: 500;
     line-height: 21px;
 }
-footer{
+/* footer{
     padding-top: 7rem;
     padding-bottom: 3rem;
     background-color: #00004A;
@@ -575,6 +615,123 @@ footer li{
     font-weight: 500;
     line-height: 29px;
     color: #B5F9FF;
+} */
+.news{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #00004A;
+    color: white;
+}
+.news main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.news main div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news input{
+    width: 700px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Roboto Mono;
+    border-radius: 10px;
+    border: none;
+}
+#sub{
+    background-color: #000086;
+    color: white;
+}
+.news h1{
+    font-family: Roboto Mono;
+    font-size: 32px;
+    line-height: 24px;
+}
+.news p{
+    font-family: Roboto Mono;
+    font-size: 18px;
+    line-height: 24px;
+}
+.contact{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.c-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+.contact h2,.contact h5,.contact h1{
+    font-family: Roboto Mono;
+    line-height: 24px;
+}
+.contact h2{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    color: #00004A;
+}
+.contact h5{
+    font-size: 30px;
+    line-height: 40px;
+}
+.contact a{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3rem;
+}
+.contact span{
+    display: flex;
+    gap: 2rem;
+}
+.contact span img{
+    width: 30px;
+}
+
+/* new footer */
+
+footer{
+    padding-top: 2rem;
+    background-color: #00004A;
+    padding-bottom: 1rem;
+}
+.foot1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    color: white;
+}
+.foot2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding-top: 1rem;
+}
+.foot2 span{
+    padding: 1px 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* height: 20px; */
+    width: 40px;
+    font-size: 20px;
 }
 
 
