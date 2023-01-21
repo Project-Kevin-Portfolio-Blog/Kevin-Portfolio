@@ -175,7 +175,7 @@ nav ul li{
     padding-top: 9rem;
     padding-bottom: 6rem;
     font-family: Roboto Mono;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 53px;
     letter-spacing: 0.4em;
@@ -205,7 +205,7 @@ nav ul li{
 }
 .four header{
     font-family: Roboto Mono;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 53px;
     letter-spacing: 0.4em;
@@ -250,16 +250,16 @@ nav ul li{
     display: flex;
     flex-direction: column;
     gap: 6rem;
-    margin-top: 5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background: #00004A;
+    /* margin-top: 5rem; */
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #E3E1F2;
     color: #fff;
 }
 /* .five hr{
     border: 1px solid #5B9FFF
 } */
-.mentor h1,.five h1,.five_b h1, .six h1{
+.mentor h1,.mentor h2 .five h1,.five_b h1,.f-top h1, .six h1{
     font-family: Roboto Mono;
     font-size: 32px;
     font-weight: 700;
@@ -267,10 +267,19 @@ nav ul li{
     letter-spacing: 0.4em;
     margin-bottom: 2rem;
 }
+.mentor H1{
+    font-size: 35PX;
+    font-weight: 900;
+}
+.mentor h2{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
 .mentor{
     margin-top: 3rem;
     padding-top: 4rem;
-    background-color: #000086;
+    background-color: #00004A;
     background-image: url(./images/Ellipse\ 5.png);
     background-repeat: no-repeat;
     background-position: top 0 right 0;
@@ -301,7 +310,28 @@ nav ul li{
     width: 250px;
     border-radius: 10px;
 }
-/* .f-top{
+.menH{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.menH li{
+    font-family: Roboto mono;
+    letter-spacing: .1em;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: -4rem;
+}
+.menH span{
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.five h1,.five h4,.five h2{
+    color: #00004A;
+}
+.f-top{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -330,6 +360,7 @@ nav ul li{
     font-weight: 500;
     line-height: 30px;
     width: 95%;
+    color: black;
 }
 .f-left a{
     color: #0145FE;
@@ -338,8 +369,8 @@ nav ul li{
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
-} */
-/* .f-right{
+}
+.f-right{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -372,24 +403,25 @@ nav ul li{
     margin-top: .6rem;
     word-spacing: 3px;
     width: 95%;
-} */
-/* .five .topics{
+    color: black;
+}
+.five .topics{
     background-color: #97DBFF;
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 700;
     color: #0145FE;
-} */
-/* .f-left .topics{
+}
+.f-left .topics{
     font-size: 16px;
     line-height: 42px;
     margin-right: 8px;
     border-radius: 20px;
     padding: 6px 10px;
-} */
+}
 
 /* eliminate the f right topics */
-/* .f-right .topics,.f-bottom .topics{
+.f-right .topics,.f-bottom .topics{
     font-size: 8px;
     line-height: 42px;
     margin-right: 1px;
@@ -401,18 +433,19 @@ nav ul li{
     font-style: normal;
     font-weight: 700;
     line-height: 13px;
-} */
+    color: #00004A;
+}
 
 /* eliminate the f right topics */
-/* .f-right .date,.f-bottom .date{
+.f-right .date,.f-bottom .date{
     font-size: 10px;
     float: right;
-} */
-/* .f-left .date{
+}
+.f-left .date{
     float: right;
     font-size: 18px;
-} */
-/* .f-bottom header{
+}
+.f-bottom header{
     display: flex;
     justify-content: space-between;
 }
@@ -471,7 +504,7 @@ nav ul li{
 }
 .Blog_page{
     text-decoration: none;
-    background: linear-gradient(0deg, #0145FE, #0145FE),
+    background: linear-gradient(0deg, #0145FE, #00004a),
     linear-gradient(0deg, #F1FFFF, #F1FFFF);
     padding: 6px 20px;
     border-radius: 20px;
@@ -482,7 +515,7 @@ nav ul li{
     text-align: center;
     width: 245px;
     color: #fff;
-    margin-top: 3rem;
+    margin-top: -3rem;
 }
 select{
     padding: 7px 10px;
@@ -491,8 +524,8 @@ select{
     border-radius: 20px;
     color: #0145FE;
     border: 1px solid #0145FE;
-} */
-/* .five_b{
+}
+.five_b{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -501,8 +534,8 @@ select{
 .five_b header{
     display: flex;
     justify-content: space-between;
-} */
-/* .five_b main{
+}
+.five_b main{
     display: flex;
     gap: 5rem;
     justify-content: space-between;
@@ -517,8 +550,8 @@ select{
     font-size: 14px;
     font-weight: 200;
     line-height: 18px;
-} */
-.six{
+}
+/* .six{
     padding-top: 5rem;
     padding-bottom: 5rem;
     display: flex;
@@ -555,7 +588,7 @@ select{
     font-size: 16px;
     font-weight: 500;
     line-height: 21px;
-}
+} */
 /* footer{
     padding-top: 7rem;
     padding-bottom: 3rem;
@@ -668,7 +701,7 @@ footer li{
     gap: 2rem;
     width: 50%;
 }
-.contact h2,.contact h5,.contact h1{
+.contact h2,.contact h5{
     font-family: Roboto Mono;
     line-height: 24px;
 }
@@ -677,10 +710,13 @@ footer li{
     font-weight: 900;
     line-height: 60px;
     color: #00004A;
+    letter-spacing: 0.4em;
 }
 .contact h5{
     font-size: 30px;
     line-height: 40px;
+    font-family: Roboto Mono;
+    letter-spacing: 0.1em;
 }
 .contact a{
     font-size: 40px;
@@ -689,6 +725,9 @@ footer li{
     text-decoration: none;
     color: black;
     margin-bottom: 3rem;
+    font-family: Roboto Mono;
+    letter-spacing: 0.1em;
+    padding-top: 2rem;
 }
 .contact span{
     display: flex;
