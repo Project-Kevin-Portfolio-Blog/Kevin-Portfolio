@@ -172,7 +172,7 @@ nav ul li{
     flex-direction: column;
     gap: 6rem;
     align-items: center;
-    padding-top: 9rem;
+    padding-top: 5rem;
     padding-bottom: 6rem;
     font-family: Roboto Mono;
     font-size: 20px;
@@ -246,16 +246,7 @@ nav ul li{
     font-weight: 400;
     line-height: 40px;
 }
-.five{
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    /* margin-top: 5rem; */
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background: #E3E1F2;
-    color: #fff;
-}
+
 /* .five hr{
     border: 1px solid #5B9FFF
 } */
@@ -270,26 +261,45 @@ nav ul li{
 .mentor H1{
     font-size: 35PX;
     font-weight: 900;
+    position: relative;
+    padding-bottom: 2rem;
 }
 .mentor h2{
     font-size: 20px;
     letter-spacing: 0.1em;
     font-weight: 700;
+    position: relative;
 }
 .mentor{
+    position: relative;
     margin-top: 3rem;
     padding-top: 4rem;
-    background-color: #00004A;
+    /* background-color: #00004A; */
     background-image: url(./images/Ellipse\ 5.png);
     background-repeat: no-repeat;
     background-position: top 0 right 0;
     color: white;
     padding-bottom: 4rem;
 }
+.mentor::before{
+    content: '';
+    background: url(./images/preach.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 0 top 30%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(20%);
+}
 .mentor main{
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    position: relative;
 }
 .mentor p{
     font-family: Roboto Mono;
@@ -305,7 +315,9 @@ nav ul li{
     line-height: 24px;
     text-align: center;
     color: #00004A;
+    color: white;
     background-color: white;
+    background-color: #00004A;
     padding: 10px 20px;
     width: 250px;
     border-radius: 10px;
@@ -323,10 +335,20 @@ nav ul li{
     padding: 10px;
     border-radius: 10px;
     margin-right: -4rem;
+    position: relative;
 }
 .menH span{
     margin-left: .5rem;
     margin-right: .5rem;
+}
+.five{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: #E3E1F2;
+    color: #fff;
 }
 .five h1,.five h4,.five h2{
     color: #00004A;
@@ -344,7 +366,7 @@ nav ul li{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 50%;
+    width: 40%;
 }
 .f-left h2{
     font-family: Roboto Mono;
@@ -369,6 +391,9 @@ nav ul li{
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
+}
+.f-left~img{
+    width: 500px;
 }
 .f-right{
     display: flex;
@@ -411,6 +436,7 @@ nav ul li{
     font-style: normal;
     font-weight: 700;
     color: #0145FE;
+    color: #00004A;
 }
 .f-left .topics{
     font-size: 16px;
@@ -445,7 +471,7 @@ nav ul li{
     float: right;
     font-size: 18px;
 }
-.f-bottom header{
+/* .f-bottom header{
     display: flex;
     justify-content: space-between;
 }
@@ -501,7 +527,7 @@ nav ul li{
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
-}
+} */
 .Blog_page{
     text-decoration: none;
     background: linear-gradient(0deg, #0145FE, #00004a),
@@ -515,7 +541,8 @@ nav ul li{
     text-align: center;
     width: 245px;
     color: #fff;
-    margin-top: -3rem;
+    margin-top: -2rem;
+    margin-left: auto;
 }
 select{
     padding: 7px 10px;
@@ -655,7 +682,7 @@ footer li{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00004A;
+    background-color: #000086;
     color: white;
 }
 .news main{
@@ -677,7 +704,7 @@ footer li{
     border: none;
 }
 #sub{
-    background-color: #000086;
+    background-color: #00004A;
     color: white;
 }
 .news h1{
@@ -711,12 +738,14 @@ footer li{
     line-height: 60px;
     color: #00004A;
     letter-spacing: 0.4em;
+    padding-bottom: 4rem;
 }
 .contact h5{
     font-size: 30px;
     line-height: 40px;
     font-family: Roboto Mono;
     letter-spacing: 0.1em;
+    padding-bottom: 1rem;
 }
 .contact a{
     font-size: 40px;
