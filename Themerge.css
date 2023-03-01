@@ -44,8 +44,8 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .chat{
     height: 60px;
@@ -184,62 +184,35 @@ header h1{
     text-align: justified;
 }
 footer{
-    padding-top: 7rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
     background-color: #00004A;
-    background-image: url(./images/Ellipse\ 5.png);
-    background-position: top 0 right 0 ;
-    background-repeat: no-repeat;
+    padding-bottom: 1rem;
 }
-footer h3{
-    font-family: Roboto Mono;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 42px;
-    color: #B5F9FF;
-    margin-bottom: 1rem;
-}
-footer h1{
-    font-family: Hanson;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 37px;
-    color: #B5F9FF;
-    margin-bottom: 9rem;
-}
-footer div{
+.foot1{
     display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   color: #B5F9FF;
-   margin-bottom: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
 }
-footer div p{
-    width: 36%;
-    font-family: Roboto Mono;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-}
-footer span{
-    margin-left: 20px;
-}
-footer small{
-    font-size: 14px;
-    transform: translateX(1rem);
-    border: 1px solid #B5F9FF;
-    padding: 2px 6px;
-    border-radius: 50%;
-}
-footer ul{
-    display: flex;
+ul{
     list-style: none;
-    gap: 1rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    color: white;
 }
-footer li{
-    font-family: Roboto Mono;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 29px;
-    color: #B5F9FF;
+.foot2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding-top: 1rem;
+}
+.foot2 span{
+    padding: 1px 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* height: 20px; */
+    width: 40px;
+    font-size: 20px;
 }
