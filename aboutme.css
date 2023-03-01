@@ -11,7 +11,7 @@ body{
     max-width: 1440px;
     margin: auto;
 }
-nav,.one,.two,.six, footer{
+nav,.one,.two,.news, footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
@@ -45,8 +45,8 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .chat{
     height: 60px;
@@ -63,7 +63,7 @@ nav ul li{
     height: 11px;
 }
 .one{
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 4rem;
 }
 .one h1, .two h1{
@@ -113,6 +113,18 @@ nav ul li{
 .brands main img{
     width: 275px;
 }
+.blogsec{
+    margin-top: 4rem;
+}
+#readBlog{
+    line-height: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: Roboto Mono;
+    text-decoration: none;
+    background: #000086;
+    padding: 15px 30px;
+}
 .one div {
     margin: 2rem 0;
     display: flex;
@@ -126,7 +138,8 @@ nav ul li{
     padding-top: 5px;
 }
 .two{
-    margin-top: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -152,7 +165,7 @@ select{
 .two main img{
     width: 565px;
 }
-.six{
+/* .six{
     padding-top: 5rem;
     padding-bottom: 5rem;
     display: flex;
@@ -194,8 +207,8 @@ select{
     font-size: 16px;
     font-weight: 500;
     line-height: 21px;
-}
-footer{
+} */
+/* footer{
     padding-top: 7rem;
     padding-bottom: 3rem;
     background-color: #00004A;
@@ -254,4 +267,80 @@ footer li{
     font-weight: 500;
     line-height: 29px;
     color: #B5F9FF;
+} */
+.news{
+    margin-top: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #000086;
+    color: white;
+}
+.news main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.news main div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news input{
+    width: 700px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Roboto Mono;
+    border-radius: 10px;
+    border: none;
+}
+#sub{
+    background-color: #00004A;
+    color: white;
+}
+.news h1{
+    font-family: Roboto Mono;
+    font-size: 32px;
+    line-height: 24px;
+}
+.news p{
+    font-family: Roboto Mono;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+footer{
+    padding-top: 2rem;
+    background-color: #00004A;
+    padding-bottom: 1rem;
+}
+.foot1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    color: white;
+}
+.foot2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding-top: 1rem;
+}
+.foot2 span{
+    padding: 1px 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* height: 20px; */
+    width: 40px;
+    font-size: 20px;
 }

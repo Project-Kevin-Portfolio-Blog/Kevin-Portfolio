@@ -274,32 +274,40 @@ nav ul li{
     position: relative;
     margin-top: 3rem;
     padding-top: 4rem;
-    /* background-color: #00004A; */
+    background-color: #00004A;
+    background-size: 1400px;
     background-image: url(./images/Ellipse\ 5.png);
     background-repeat: no-repeat;
-    background-position: top 0 right 0;
+    background-position: top 0% right 0%;
     color: white;
     padding-bottom: 4rem;
 }
 .mentor::before{
     content: '';
-    background: url(./images/preach.png);
+    background: url(./images/kevin1.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 0 top 30%;
+    background-size: contain;
+    background-size: 600px;
+    background-position: right 1% top 30%;
     object-fit: cover;
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    filter: brightness(20%);
+    /* filter: brightness(20%); */
+    /* filter: sepia(20%) contrast(80%) saturate(80%) brightness(40%)  */
+    /* filter: drop-shadow(10px 10px #00004a); */
 }
 .mentor main{
     display: flex;
     flex-direction: column;
     gap: 4rem;
     position: relative;
+    width: 60%;
+}
+#h_top{
+    margin-bottom: -3rem;
 }
 .mentor p{
     font-family: Roboto Mono;
@@ -315,9 +323,9 @@ nav ul li{
     line-height: 24px;
     text-align: center;
     color: #00004A;
-    color: white;
+    /* color: white; */
     background-color: white;
-    background-color: #00004A;
+    /* background-color: #00004A; */
     padding: 10px 20px;
     width: 250px;
     border-radius: 10px;
