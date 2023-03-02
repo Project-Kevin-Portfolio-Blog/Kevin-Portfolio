@@ -789,7 +789,7 @@ footer{
     align-items: center;
     margin-bottom: 2rem;
 }
-ul{
+.foot1 ul{
     list-style: none;
     display: flex;
     gap: 3rem;
@@ -811,5 +811,281 @@ ul{
     width: 40px;
     font-size: 20px;
 }
+#slist li{
+    font-size: 14px;
+}
 
-
+@media (max-width:670px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        /* border: 1px solid ; */
+    }
+    .one{
+        flex-direction: column;
+        margin-top: 9rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+    }
+    .one header{
+        gap: 10px;
+    }
+    .one header,.one main{
+        width: 100%;
+        /* border: 1px solid; */
+    }
+    .one main{
+        justify-content: center;
+        align-items: center;
+        transform: translateX(0);
+    }
+    .one h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .one header h3{
+        font-family: Noto Sans;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+    .one h5{
+        font-size: 12px;
+        line-height: 17.4px;
+    }
+    .one p{
+        font-size: 14px;
+        width: 100%;
+    }
+    .one main img{
+        width: 400px;
+        height: initial;
+        /* height: 339px; */
+        /* object-fit: cover; */
+    }
+    .one button{
+        font-size: 14px;
+        width: 150px;
+        height: 40px;
+    }
+    .two_1,.two_2{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .two div{
+        font-size: 14px;
+    }
+    .three{
+        font-family: Roboto Mono;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.6em;
+        padding-top: 4rem;
+        gap: 3rem;
+    }
+    .three main{
+        gap: 3rem;
+        justify-content: flex-start;
+        overflow-x: hidden;
+    }
+    .three main img{
+        width: 200px;
+    }
+    .four{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .four main{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .four main header{
+        width: 100%;
+    }
+    .four main article{
+        width: 100%;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: justified;
+    }
+    .four header{
+        font-family: Roboto Mono;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.6em;
+    }
+    .four main header img{
+        width: 235px;
+        height: initial;
+    }
+    .four a{
+        width: 130px;
+        font-size: 14px;
+    }
+    .four a img{
+        width: 10px;
+    }
+    .mentor{
+        margin-top: 0;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+    .mentor H1{
+        font-size: 18px;
+    }
+    .mentor h2{
+        font-size: 16px;
+    }
+    .menH ul{
+        display: flex;
+        gap: 2rem;
+    }
+    .menH li{
+        font-size: 14px;
+        list-style: none;
+    }
+    .mentor p{
+        font-size: 12px;
+    }
+    .menH span{
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .mentor main{
+        width: 100%;
+    }
+    .mentor::before{
+        filter: brightness(50%);
+        opacity: .8;
+        right: -30%;
+        bottom: 0rem;
+    }
+    .mentor a{
+        font-size: 14px;
+        width: 170px;
+        margin-top: -2rem;
+    }
+    .f-top article{
+        flex-direction: column;
+    }
+    .f-left{
+        width: 100%;
+    }
+    .f-left>img{
+        width: 100%;
+    }
+    .f-right::before{
+        content: 'LATEST ARTICLES';
+        font-family: Roboto Mono;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.4em;
+        color: #000086;
+        margin-bottom: 2rem;
+    }
+    .f-right{
+        width: 100%;
+    }
+    .five h1{
+        font-family: Roboto Mono;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.4em;
+        margin-top: 4rem;
+    }
+    .f-left h2{
+        font-size: 18px;
+        margin: 5px 0px;
+    }
+    .f-left p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .f-left .topics{
+        font-size: 8px;
+    }
+    .f-left .date{
+        font-size: 12px;
+    }
+    .f-right .date{
+        font-size: 10px;
+    }
+    .f-right main h4{
+        font-size: 14px;
+    }
+    .f-right main{
+        font-size: 0px;
+    }
+    .Blog_page{
+        margin-top: -3rem;
+        font-size: 12px;
+        width: 170px;
+        padding: 6px 15px;
+        line-height: 28px;
+        margin-bottom: 3rem;
+    }
+    .news{
+        padding-bottom: 5rem;
+    }
+    .news h1{
+        font-size: 18px;
+        letter-spacing: 0.2em;
+        padding-top: 3rem;
+    }
+    .news p{
+        font-size: 14px;
+    }
+    .news input{
+        width: 100%;
+        font-size: 14px;
+    }
+    .contact{
+        /* flex-direction: column; */
+        gap: 0;
+    }
+    .c-left{
+        width: 100%;
+    }
+    .contact h2{
+        font-size: 18px;
+        padding-bottom: 0;
+    }
+    .contact h5{
+        font-size: 16px;
+    }
+    .contact a{
+        font-size: 18px;
+    }
+    #fpic{
+        width: 300px;
+    }
+    .foot2 span{
+        font-size: 16px;
+    }
+    .foot1{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .foot1 ul li{
+        font-size: 16px;
+    }
+    #slist li{
+        font-size: 12px;
+    }
+}

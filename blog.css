@@ -7,7 +7,7 @@
     font-family: hanson;
     src: url(./fonts/Hanson-Bold_28ef9370662e758bd08e61f45c3c69b8.otf);
 }
-nav,header,.one,.six,footer{
+nav,header,.one,.six,.news,footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
@@ -143,6 +143,52 @@ select{
     gap: 4rem;
     margin-bottom: 6rem;
 }
+.news{
+    margin-top: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #000086;
+    color: white;
+}
+.news main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.news main div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news input{
+    width: 700px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Roboto Mono;
+    border-radius: 10px;
+    border: none;
+}
+#sub{
+    background-color: #00004A;
+    color: white;
+}
+.news h1{
+    font-family: Roboto Mono;
+    font-size: 32px;
+    line-height: 24px;
+    color: white;
+    margin-left: -5rem;
+}
+.news p{
+    font-family: Roboto Mono;
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .six{
     padding-top: 5rem;
     padding-bottom: 5rem;

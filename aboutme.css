@@ -93,6 +93,27 @@ nav ul li{
     gap: 2rem;
     margin-top: 4rem;
 }
+#gidaLogo{
+    width: 300px;
+    margin: -7rem 0;
+    animation: logo 3s linear infinite;
+}
+#bunnLogo{
+    width: 150px;
+    margin-top: -3rem;
+    animation: logo 3s linear infinite;
+}
+@keyframes logo {
+    45%{
+        transform: rotateX(360deg);
+    }
+    90%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
 .academy{
     display: flex;
     gap: 2rem;
@@ -134,7 +155,7 @@ nav ul li{
     font-family: Roboto Mono;
     position: relative;
 }
-.gida::before{
+/* .gida::before{
     content: '';
     background-image: url(./images/GIDA-color.png);
     background-repeat: no-repeat;
@@ -143,8 +164,8 @@ nav ul li{
     left: 0; right: 0; top: -20%; bottom: 0;
     opacity: .15;
     filter: brightness(100%);
-}
-.bunn::before{
+} */
+/* .bunn::before{
     content: '';
     background-image: url(./images/logo.png);
     background-repeat: no-repeat;
@@ -153,7 +174,7 @@ nav ul li{
     left: 13%; right: 0; top: -3%; bottom: 0;
     opacity: .15;
     filter: brightness(100%);
-}
+} */
 .brands{
     display: flex;
     flex-direction: column;
@@ -209,11 +230,12 @@ nav ul li{
     margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
 }
 .two header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 select{
     padding: 7px 10px;
@@ -231,6 +253,69 @@ select{
 }
 .two main img{
     width: 565px;
+    animation: slides 30s linear infinite;
+}
+.two main div{
+    display: flex;
+    overflow-x: hidden;
+    
+}
+@keyframes slides {
+    0%{
+        transform: translateX(-500px);
+        /* opacity: .4; */
+        /* filter: brightness(50%); */
+    }
+    8%,10%{
+        transform: translateX(-1000px);
+        opacity: 1;
+        /* filter: brightness(50%); */
+    }
+    20%{
+        transform: translateX(-1500px);
+        /* opacity: .4; */
+        /* filter: brightness(50%); */
+    }
+    30%{
+        transform: translateX(-2000px);
+        opacity: 1;
+        /* filter: brightness(50%); */
+    }
+    40%{
+        transform: translateX(-2500px);
+        /* opacity: .4; */
+        /* filter: brightness(50%); */
+    }
+    50%{
+        transform: translateX(-3000px);
+        opacity: 1;
+        /* filter: brightness(50%); */
+    }
+    60%{
+        transform: translateX(-3500px);
+        /* opacity: .4; */
+        /* filter: brightness(50%); */
+    }
+    70%{
+        transform: translateX(-4000px);
+        opacity: 1;
+        /* filter: brightness(50%); */
+    }
+    80%{
+        transform: translateX(-4500px);
+        /* opacity: .4; */
+        /* filter: brightness(50%); */
+    }
+    90%{
+        transform: translateX(-5000px);
+        opacity: 1;
+        /* filter: brightness(50%); */
+    }
+    100%{
+        transform: translateX(-5500px);
+        /* opacity: .4; */
+        /* filter: brightness(50%); */
+    }
 }
 /* .six{
     padding-top: 5rem;
