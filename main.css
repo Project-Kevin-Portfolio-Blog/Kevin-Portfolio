@@ -7,9 +7,13 @@
     font-family: hanson;
     src: url(./fonts/Hanson-Bold_28ef9370662e758bd08e61f45c3c69b8.otf);
 }
+html{
+    overflow-x: hidden;
+}
 body{
     max-width: 1440px;
     margin: auto;
+    overflow-x: hidden;
 }
 nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
     padding-left: 5rem;
@@ -44,8 +48,8 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 .chat{
     height: 60px;
@@ -821,6 +825,7 @@ footer{
     }
     body{
         width: 100%;
+        overflow-x: hidden;
     }
     nav{
         display: none;
