@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: hanson;
+    src: url(./fonts/Hanson-Bold_28ef9370662e758bd08e61f45c3c69b8.otf);
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+    
+}
+nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+}
+#logo1{
+    width: 171.77px;
+    height: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    padding-right: 1rem;
+    z-index: 40;
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    font-size: 22px;
+    transition: 0.5s linear 0.1s;
+    font-weight: 900;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+}
+.chat{
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 18px;
+    word-spacing: 10px;
+    background-color: #0145FE;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.chat img{
+    width: 11px;
+    height: 11px;
+}
+.one{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* color: white; */
+    position: relative;
+    /* padding: 15rem 0rem; */
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    /* height: 80vh; */
+    justify-content: center;
+    align-items: center;
+}
+/* .one::before{
+    content: '';
+    background-image: url(./images/mentor-hands.jpg);
+    background-size: 1500px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left:0%;
+    top: -100%;
+    bottom: 0;
+    right: 0;
+    opacity: .1;
+} */
+.one header{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.one h1{
+    position: relative;
+    font-family: hanson;
+    line-height: 60px;
+    font-size: 40px;
+}
+.one main{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+.one ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: Roboto Mono;
+    font-size: 20px;
+    font-weight: bold;
+}
+.one p{
+    margin-top: 1rem;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}

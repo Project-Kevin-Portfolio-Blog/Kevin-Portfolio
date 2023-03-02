@@ -353,8 +353,8 @@ nav ul li{
     display: flex;
     flex-direction: column;
     gap: 6rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background: #E3E1F2;
     color: #fff;
 }
@@ -400,13 +400,15 @@ nav ul li{
     font-weight: 500;
     line-height: 40px;
 }
-.f-left~img{
+.f-left>img{
     width: 500px;
+    height: 250px;
+    object-fit: cover;
 }
 .f-right{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     width: 50%;
 }
 .f-right main{
@@ -424,8 +426,8 @@ nav ul li{
     width: 85%;
 }
 .f-right main img{
-    width: 260px;
-    height: 180px;
+    width: 200px;
+    height: 120px;
 }
 .f-right main p{
     font-family: 'Roboto Mono';
@@ -549,7 +551,7 @@ nav ul li{
     text-align: center;
     width: 245px;
     color: #fff;
-    margin-top: -2rem;
+    margin-top: -7rem;
     margin-left: auto;
 }
 select{

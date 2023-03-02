@@ -87,6 +87,73 @@ nav ul li{
     display: flex;
     justify-content: center;
 }
+.aca_con{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.academy{
+    display: flex;
+    gap: 2rem;
+}
+.academy main{
+    /* border: 1px solid; */
+    border-radius: 15px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 0px 20px -10px #0145FE;
+    /* gap: 1rem; */
+}
+.academy h1{
+    font-family: hanson;
+    letter-spacing: 0rem;
+    font-size: 20px;
+    line-height: 35px;
+    position: relative;
+}
+.academy p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 2rem;
+    position: relative;
+    color: black;
+}
+.academy a{
+    text-decoration: none;
+    color: white;
+    background-color: #000086;
+    padding: 10px 15px;
+    width: 30%;
+    margin-left: auto;
+    text-align: center;
+    font-family: Roboto Mono;
+    position: relative;
+}
+.gida::before{
+    content: '';
+    background-image: url(./images/GIDA-color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0; right: 0; top: -20%; bottom: 0;
+    opacity: .15;
+    filter: brightness(100%);
+}
+.bunn::before{
+    content: '';
+    background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 450px;
+    position: absolute;
+    left: 13%; right: 0; top: -3%; bottom: 0;
+    opacity: .15;
+    filter: brightness(100%);
+}
 .brands{
     display: flex;
     flex-direction: column;
