@@ -1114,7 +1114,7 @@ footer{
     }
     .mentor a{
         font-size: 14px;
-        width: 170px;
+        width: 200px;
         margin-top: -2rem;
     }
     .f-top article{
@@ -1216,17 +1216,18 @@ footer{
     .contact{
         /* flex-direction: column; */
         gap: 0;
-        background-image: url(./images/kevin1.png);
+        flex-direction: column;
+        /* background-image: url(./images/kevin1.png);
         background-size: 200px;
         background-repeat: no-repeat;
-        background-position: right 0;
+        background-position: right 0; */
     }
     .c-left{
         width: 100%;
     }
     .contact h2{
         font-size: 18px;
-        padding-bottom: 0;
+        padding-bottom: 2rem;
     }
     .contact h5{
         font-size: 16px;
@@ -1242,10 +1243,10 @@ footer{
         gap: 1rem;
     }
     #fpic{
-        width: 200px;
-        transform: translateX(-50%);
+        width: 300px;
+        /* transform: translateX(-50%); */
         z-index: 1;
-        display: none;
+        /* display: none; */
     }
     .foot2 span{
         font-size: 16px;
