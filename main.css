@@ -945,6 +945,7 @@ footer{
     }
     .one header{
         gap: 10px;
+        background-position: top 10% right 0;
     }
     .one header,.one main{
         width: 100%;
