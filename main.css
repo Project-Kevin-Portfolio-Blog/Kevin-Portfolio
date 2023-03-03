@@ -988,14 +988,20 @@ footer{
     .two{
         background-repeat: no-repeat;
         background-size: cover;
+        padding-top: 3rem;
+        gap: 1rem;
     }
     .two_1,.two_2{
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         margin: auto;
+        gap: 2rem;
     }
     .two div{
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .two div img{
+        margin-bottom: 5px;
     }
     .bg{
         top: 0%;
