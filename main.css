@@ -15,6 +15,9 @@ body{
     margin: auto;
     overflow-x: hidden;
 }
+#menu,#close{
+    display: none;
+}
 nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -842,7 +845,89 @@ footer{
         overflow-x: hidden;
     }
     nav{
+        /* display: none; */
+        /* box-shadow: -10px 0px 20px -5px #000086; */
+        position: fixed;
+        z-index: 40;
+        width: 100%;
+        background-color: #fff;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        top: .8rem;
+        right: 1rem;
+        z-index: 41;
+        width: 40px;
+        /* animation: diss 1s ease-in-out 2; */
+    }
+    @keyframes diss {
+        20%{
+            /* transform: rotate(72deg); */
+            opacity: .8;
+        }
+        40%{
+            /* transform: rotate(144deg); */
+            opacity: .6;
+        }
+        60%{
+            /* transform: rotate(216deg); */
+            opacity: .4;
+        }
+        80%{
+            /* transform: rotate(288deg); */
+            opacity: .2;
+        }
+        100%{
+            transform: rotate(360deg);
+            opacity: 0;
+        }
+    }
+    #close{
         display: none;
+        position: absolute;
+        top: 1.1rem;
+        right: 1rem;
+        z-index: 41;
+        width: 30px;
+    }
+    #logo1{
+        transform: translateY(-8px);
+    }
+    nav ul{
+        position: absolute;
+        top: 2rem;
+        background-color: white;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start;
+        padding-top: 4rem;
+        height: 100vh;
+        width: 70%;
+        inset: 100% 0 0 30%;
+        z-index: 40;
+        /* border: 1px solid; */
+        box-shadow: 0px 0px 10px -5px #000086;
+        transform: translateX(100%);
+    }
+    .chat{
+        font-size: 14px;
+        padding: 20px 30px;
+        word-spacing: 5px;
+        height: auto;
+    }
+    .chat img{
+        width: 8px;
+    }
+    #abt{
+        height: 40px;
+        padding: 10px 20px;
+        font-size: 14px;
+        word-spacing: 10px;
+        background-color: #0145FE;
+        color: white;
+        border-radius: 20px;
+        border: none;
     }
     nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
         padding-left: 1.5rem;
