@@ -937,7 +937,10 @@ footer{
     }
     .one{
         flex-direction: column;
-        margin-top: 9rem;
+        padding-top: 9rem;
+        /* margin-inline: -1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem; */
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -945,7 +948,10 @@ footer{
     }
     .one header{
         gap: 10px;
-        background-position: top 10% right 0;
+        background-image: url(./images/Ellipse\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top 0% bottom 0%;
     }
     .one header,.one main{
         width: 100%;
@@ -955,6 +961,7 @@ footer{
         justify-content: center;
         align-items: center;
         transform: translateX(0);
+        background: none;
     }
     .one h1{
         font-size: 36px;
