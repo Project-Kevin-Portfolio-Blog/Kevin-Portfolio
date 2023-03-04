@@ -36,7 +36,7 @@ if (phoneSize1.matches) {
 
 
 menuopen.addEventListener('click', () => {
-    menuopen.style.cssText = 'animation: diss .5s ease-in-out 1;'
+    menuopen.style.cssText = 'animation: diss .5s linear 1;'
     menuslidein.style.cssText = 'transform: translateX(0%); transition: .5s linear;'
     document.querySelector('nav').style.cssText = 'box-shadow: -10px 0px 20px -5px #000086;'
     setTimeout(() => {
