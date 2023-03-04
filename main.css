@@ -989,9 +989,9 @@ footer{
         background-image: url(./images/bg-b-3.png);
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top: 2rem;
+        padding-top: 0rem;
         gap: 0rem;
-        padding-bottom: 4rem;
+        padding-bottom: 1rem;
     }
     .two_1,.two_2{
         flex-direction: column;
