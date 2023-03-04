@@ -26,6 +26,9 @@ if (phoneSize1.matches) {
     console.log('firsts')
 }
 
+
+
+
 // window.onscroll = function () {
 //     document.querySelector('nav').style.cssText = 'box-shadow: -10px 0px 20px -5px #000086;'
 // }

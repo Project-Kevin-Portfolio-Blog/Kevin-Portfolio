@@ -937,7 +937,7 @@ footer{
     }
     .one{
         flex-direction: column;
-        padding-top: 9rem;
+        padding-top: 6rem;
         /* margin-inline: -1.5rem;
         padding-left: 3rem;
         padding-right: 3rem; */
@@ -962,9 +962,13 @@ footer{
         align-items: center;
         transform: translateX(0);
         background: none;
+        background-image: url(./images/Ellipse\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top 0% bottom 0%;
     }
     .one h1{
-        font-size: 36px;
+        font-size: 32px;
         line-height: 40px;
     }
     .one header h3{
@@ -980,6 +984,8 @@ footer{
     .one p{
         font-size: 14px;
         width: 100%;
+        margin-top: -1.5rem;
+        line-height: 28px;
     }
     .one main img{
         width: 350px;
@@ -1037,6 +1043,12 @@ footer{
     }
     .three main img{
         width: 100px;
+        animation: logo 5s linear infinite;
+    }
+    @keyframes logo {
+        100%{
+            transform: translateX(-290px);
+        }
     }
     .four{
         padding-top: 4rem;
