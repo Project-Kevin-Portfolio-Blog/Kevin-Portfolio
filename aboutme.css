@@ -24,8 +24,9 @@ nav,.one,.two,.news, footer{
     padding-top: 1rem;
 }
 #logo1{
-    width: 171.77px;
-    height: 50px;
+    width: 271.77px;
+    height: 60px;
+    object-fit: cover;
 }
 nav{
     display: flex;
@@ -642,7 +643,8 @@ ul{
         width: 30px;
     }
     #logo1{
-        transform: translateY(-8px);
+        height: 50px;
+        transform: translate(-4rem, -7px);
     }
     nav ul{
         position: absolute;
