@@ -45,3 +45,9 @@ if(phoneSize1.matches){
 }else {
     console.log('firsts')
 }
+
+// let imgText = document.querySelectorAll('.imgtext')
+
+// for(i=0; i<imgText.length; i++){
+//     imgText[i].style.cssText = 'width: 700px; color: black;'
+// }

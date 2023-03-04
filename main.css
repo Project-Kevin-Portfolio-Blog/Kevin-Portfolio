@@ -937,7 +937,7 @@ footer{
     }
     .one{
         flex-direction: column;
-        padding-top: 6rem;
+        padding-top: 10rem;
         /* margin-inline: -1.5rem;
         padding-left: 3rem;
         padding-right: 3rem; */
@@ -948,10 +948,10 @@ footer{
     }
     .one header{
         gap: 10px;
-        background-image: url(./images/Ellipse\ 1.png);
+        background-image: url(./images/Ellipse\ 1.png), url(./images/Ellipse\ 2.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top 0% bottom 0%;
+        background-position: top 0% bottom 0%, right 0;
     }
     .one header,.one main{
         width: 100%;
@@ -1024,7 +1024,7 @@ footer{
     }
     .bg{
         top: 0%;
-        display: none;
+        /* display: none; */
     }
     .three{
         font-family: Roboto Mono;
