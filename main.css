@@ -1081,6 +1081,10 @@ footer{
         display: flex;
         flex-direction: row;
     }
+    .mentor::before{
+        background-size: 330px;
+        display: none;
+    }
     .menH ul{
         display: flex;
         flex-direction: column;
