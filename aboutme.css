@@ -705,6 +705,9 @@ ul{
         flex-direction: column;
         gap: 2rem;
     }
+    #gall2{
+        display: none;
+    }
     .foot1 ul li{
         font-size: 12px;
     }
@@ -715,6 +718,9 @@ ul{
     .foot1 ul{
         display: flex;
         gap: 1rem;
+    }
+    .foot2 span{
+        border: none;
     }
 }
 
