@@ -19,7 +19,11 @@ if (phoneSize1.matches) {
     mentorWriteUp.textContent = 'get ultrices vitae etiam nunc iaculis ipsum magna. Phasellus libero morbi tincidunt cras. Tincidunt dignissim euismod dui egestas donec proin est.  Blandit amet erat viverra sit egestas.'
     NewsWriteUp.textContent = 'get ultrices vitae etiam nunc iaculis ipsum magna. Phasellus libero morbi tincidunt cras'
     window.onscroll = function () {
-        document.querySelector('nav').style.cssText = 'box-shadow: -10px 0px 20px -5px #000086;'
+        if(this.scrollY > 0){
+            document.querySelector('nav').style.cssText = 'box-shadow: -10px 0px 20px -5px #000086;'
+        }else if(this.scrollY === 0){
+            document.querySelector('nav').style.cssText = 'box-shadow: none;'
+        }
     }
 
 } else {

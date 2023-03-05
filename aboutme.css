@@ -24,9 +24,10 @@ nav,.one,.two,.news, footer{
     padding-top: 1rem;
 }
 #logo1{
-    width: 271.77px;
+    width: 301.77px;
     height: 60px;
     object-fit: cover;
+    transform: translateX(-4rem);
 }
 nav{
     display: flex;
@@ -49,6 +50,7 @@ nav a:hover{
 }
 nav ul{
     display: flex;
+    gap: 2rem;
     list-style: none;
     align-items: center;
 }
@@ -208,9 +210,18 @@ nav ul li{
     justify-content: center;
     width: 100%;
     gap: 7rem;
+    overflow-x: hidden;
 }
 .brands main img{
-    width: 275px;
+    width: 175px;
+    height: 80px;
+    object-fit: contain;
+    animation: logoss 5s linear infinite ;
+}
+@keyframes logoss {
+    100%{
+        transform: translateX(-1450px);
+    }
 }
 .blogsec{
     margin-top: 4rem;
@@ -292,8 +303,11 @@ select{
     width: 60%;
     margin: auto;
     border-radius: 10px;
-    
 }
+/* #gal1{
+    width: 720px;
+    height: 426px;
+} */
 @keyframes slides {
     0%,2.5%{
         transform: translateX(0px);
@@ -557,7 +571,7 @@ footer{
     align-items: center;
     margin-bottom: 2rem;
 }
-ul{
+.foot1 ul{
     list-style: none;
     display: flex;
     gap: 3rem;
@@ -644,7 +658,7 @@ ul{
     }
     #logo1{
         height: 50px;
-        transform: translate(-4rem, -7px);
+        transform: translate(-4.6rem, -7px);
     }
     nav ul{
         position: absolute;
@@ -659,7 +673,7 @@ ul{
         inset: 100% 0 0 30%;
         z-index: 40;
         /* border: 1px solid; */
-        box-shadow: 0px 0px 10px -5px #000086;
+        box-shadow: 0px 4px 10px -5px #000086;
         transform: translateX(100%);
     }
     .chat{
@@ -735,11 +749,13 @@ ul{
     }
     .brands main img{
         width: 100px;
-        animation: logoss 5s linear infinite;
+        animation: logoss 10s linear infinite ;
+        height: 50px;
+        object-fit: contain;
     }
     @keyframes logoss {
         100%{
-            transform: translateX(-265px);
+            transform: translateX(-890px);
         }
     }
     #readBlog{

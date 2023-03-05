@@ -24,9 +24,10 @@ nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
     padding-top: 1rem;
 }
 #logo1{
-    width: 271.77px;
+    width: 301.77px;
     height: 60px;
     object-fit: cover;
+    transform: translateX(-4rem);
 }
 nav{
     display: flex;
@@ -48,12 +49,13 @@ nav a:hover{
 }
 nav ul{
     display: flex;
+    gap: 2rem;
     list-style: none;
     align-items: center;
 }
 nav ul li{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .chat{
     height: 60px;
@@ -188,19 +190,28 @@ nav ul li{
     line-height: 53px;
     letter-spacing: 0.4em;
     color: #00004a;
-    background-color: #f1ffff;
+    /* background-color: #f1ffff; */
 }
 .three h1{
     text-align: center;
 }
 .three main{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     gap: 7rem;
+    overflow-x: hidden;
 }
 .three main img{
-    width: 275px;
+    width: 175px;
+    height: 80px;
+    object-fit: contain;
+    animation: logoss 5s linear infinite ;
+}
+@keyframes logoss {
+    100%{
+        transform: translateX(-1450px);
+    }
 }
 .four{
     display: flex;
@@ -894,7 +905,7 @@ footer{
     }
     #logo1{
         height: 50px;
-        transform: translate(-4rem, -7px);
+        transform: translate(-4.6rem, -7px);
     }
     nav ul{
         position: absolute;
@@ -909,7 +920,7 @@ footer{
         inset: 100% 0 0 30%;
         z-index: 40;
         /* border: 1px solid; */
-        box-shadow: 0px 0px 10px -5px #000086;
+        box-shadow: 0px 4px 10px -5px #000086;
         transform: translateX(100%);
     }
     .chat{
@@ -1045,11 +1056,13 @@ footer{
     }
     .three main img{
         width: 100px;
-        animation: logo 5s linear infinite;
+        animation: logo 10s linear infinite ;
+        height: 50px;
+        object-fit: contain;
     }
     @keyframes logo {
         100%{
-            transform: translateX(-290px);
+            transform: translateX(-890px);
         }
     }
     .four{
