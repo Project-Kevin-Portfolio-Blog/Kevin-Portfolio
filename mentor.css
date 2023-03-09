@@ -10,9 +10,8 @@
 body{
     max-width: 1440px;
     margin: auto;
-    
 }
-nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
+nav, .one,.two,.values,.three,.four,.five,footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
@@ -76,11 +75,12 @@ nav ul li{
     position: relative;
     /* padding: 15rem 0rem; */
     width: 100%;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     /* height: 80vh; */
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 /* .one::before{
     content: '';
@@ -105,11 +105,13 @@ nav ul li{
     font-family: hanson;
     line-height: 60px;
     font-size: 40px;
+    color: #00004A;
 }
 .one main{
     position: relative;
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 .one ul{
     list-style: none;
@@ -118,12 +120,463 @@ nav ul li{
     gap: 2rem;
     font-family: Roboto Mono;
     font-size: 20px;
-    font-weight: bold;
+    color: #5A5A5A;
 }
 .one p{
     margin-top: 1rem;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 35px;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
+    font-family: Roboto Mono;
+    color: #5A5A5A;
+}
+.one button{
+    width: 22%;
+    padding: 15px 30px;
+    font-size: 22px;
+     border-radius: 15px;
+     margin: auto;
+     background-color: #0145FE;
+     color: white;
+     border: none;
+     margin-top: 3rem;
+}
+.two{
+    display: flex;
+    gap: 0rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-image: url(./images/bg-b.png);
+    color: white;
+}
+/* .two article{
+    width: 70%;
+} */
+.gainimgCon{
+    width: 40%;
+}
+#gainimg{
+    width: 80%;
+    /* width: 300px; */
+    border-radius: 20px;
+}
+.two ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.gainwu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 60%;
+}
+.gainwu header h1{
+    font-family:Roboto Mono;
+    font-size: 30px;
+    letter-spacing: .2em;
+}
+.gainwu ul li{
+    font-size: 16px;
+    font-family: Roboto Mono;
+    font-weight: 300;
+    /* font-style: italic; */
+    line-height: 30px;
+}
+.values{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-image: url(./images/bg-b-3.png);
+    color: white;
+}
+.values h1{
+    font-family: hanson;
+    font-size: 25px;
+}
+.values article{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.values article main{
+    display: flex;
+    gap: 2rem;
+}
+.values div{
+    /* border: 1px solid; */
+    display: flex;
+    font-family: Roboto Mono;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.values img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+.three ul{
+    list-style: none;
+    margin-top: -10px;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    background-color: #E3E1F2;
+    color: #00004A;
+}
+.three li{
+    margin-bottom: 5px;
+    font-family: Roboto Mono;
+    font-size: 14px;
+}
+.three header h1{
+    font-family:Roboto Mono;
+    font-size: 30px;
+    letter-spacing: .2em;
+}
+.three article{
+    display: flex;
+    gap: 3rem;
+    /* justify-content: center; */
+}
+.three div{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -10px #0145FE;
+    /* background-color: white; */
+}
+.three p{
+    font-family: Roboto Mono;
+    line-height: 27px;
+}
+.three div h1{
+    font-size: 22px;
+    font-family: hanson;
+}
+.three button{
+    width: 25%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: Roboto Mono;
+    background-color: #00004A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.four{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    align-items: center;
+    display: flex;
+    gap: 4rem;
+    background-image: url(./images/Ellipse\ 1.png), url(./images/Ellipse\ 1.png);
+    /* background-repeat: no-repeat; */
+    background-position: top 0 left 0, right 200% top 0;
+}
+.four header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 55%;
+}
+.four article{
+    width: 45%;
+}
+.four article img{
+    width: 100%;
+    border-radius: 20px;
+}
+.four h1{
+    font-family: hanson;
+    font-size: 35px;
+    color: #00004A;
+}
+.four p{
+    font-size: 16px;
+    font-family: Roboto Mono;
+    font-weight: 300;
+    line-height: 30px;
+    width: 90%;
+    color: #5A5A5A;
+}
+.four button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 25%;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #0145FE;
+    color: white;
+    border: none;
+}
+
+.five{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.five header h1{
+    font-family: hanson;
+    font-size: 30px;
+}
+.five main{
+    width: 50%;
+    margin: auto;
+    overflow-x: hidden;
+    display: flex;
+    gap: 10px;
+}
+.five article{
+    min-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: reviews 30s linear infinite;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-shadow: 0px 0px 20px -10px #0145FE;
+}
+@keyframes reviews {
+    0%,16%{
+        transform: translateX(0%);
+    }
+    20%,36%{
+        transform: translateX(-100%);
+    }
+    40%,56%{
+        transform: translateX(-200%);
+    }
+    60%,76%{
+        transform: translateX(-300%);
+    }
+    80%,100%{
+        transform: translateX(-400%);
+    }
+}
+.five article img{
+    width: 100px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+.five article h1{
+    font-size: 20px;
+    font-family: Roboto Mono;
+    line-height: 40px;
+    margin-top: 30px;
+}
+.five article h2{
+    font-size: 18px;
+    font-family: Roboto Mono;
+    line-height: 30px;
+}
+.five p{
+    margin-top: 2rem;
+    text-align: center;
+    font-family: Roboto Mono;
+    line-height: 27px;
+}
+
+footer{
+    padding-top: 2rem;
+    background-color: #00004A;
+    padding-bottom: 1rem;
+}
+.foot1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.foot1 div{
+    display: flex;
+}
+.foot1 ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    color: white;
+}
+.foot2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding-top: 1rem;
+}
+.foot2 span{
+    padding: 0px 0px;
+    /* border: 1px solid white; */
+    /* border-radius: 80%; */
+    /* height: 20px; */
+    width: 40px;
+    font-size: 30px;
+}
+.paymethod{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 2rem;
+    padding: 32px;
+    width: 30%;
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px -10px #0145FE;
+}
+.paymethod h1{
+    font-size: 14px;
+    font-family: Roboto Mono;
+    letter-spacing: .2em;
+}
+.paymethod div h2{
+    border: 1px solid gray;
+    padding-left: 1rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#bt{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.paymethod img{
+    width: 150px;
+}
+.paymethod p{
+    color: white;
+    border: 3px solid #00004A;
+    border-radius: 50%;
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    animation: rotate .5s linear infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.paymethod button{
+    padding: 5px 10px;
+    background-color: #0145FE;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+form{
+    position: fixed;
+    background-color: white;
+    width: 30%;
+    top: 15%;
+    left: 35%;
+    padding: 32px;
+    box-shadow: 0px 0px 20px -10px #0145FE;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+}
+form h1, form p{
+    text-align: center;
+}
+form p{
+    margin-top: -1rem;
+    font-size: 16px;
+    font-family: Roboto Mono;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form label{
+    font-size: 20px;
+    font-family: Roboto Mono;
+    letter-spacing: .2em;
+}
+form input{
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid #5A5A5A;
+}
+input[type='submit']{
+    background-color: #00004A;
+    color: white;
+    border: none;
+}
+.success,.failed{
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    padding: 64px;
+    font-size: 20px;
+    font-family: Roboto Mono;
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -10px #0145FE;
+    display: none;
+}
+.success{
+    color: green;
+}
+.failed{
+    color: red;
+}
+.bankdetails{
+    display: none;
+    width: 30%;
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: Roboto Mono;
+    padding: 32px;
+    box-shadow: 0px 0px 20px -10px #0145FE;
+
+}
+.bankdetails div p{
+    margin-bottom: 10px;
+}
+.bankdetails button{
+    padding: 10px 0;
+    width: 50%;
+    margin: auto;
+    background-color: #00004A;
+    color: white;
+    font-family: Roboto Mono;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
 }

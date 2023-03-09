@@ -63,9 +63,3 @@ menuclose.addEventListener('click', () => {
     }, 500)
     console.log('first')
 })
-
-// if(window.onscroll){
-//     document.querySelector('nav').style.cssText = 'box-shadow: -10px 0px 20px -5px #000086;'
-// }else{
-//     document.querySelector('nav').style.cssText = 'box-shadow: none;'
-// }
