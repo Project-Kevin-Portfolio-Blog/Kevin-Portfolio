@@ -18,7 +18,7 @@ body{
 #menu,#close{
     display: none;
 }
-nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
+nav, .one,.three,.two_1,.two_2,.four,.videos,.mentor,.five,.six,.contact,.news,footer{
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 1rem;
@@ -43,7 +43,7 @@ nav a{
     color: black;
 }
 nav a:hover{
-    font-size: 22px;
+    font-size: 18px;
     transition: 0.5s linear 0.1s;
     font-weight: 900;
 }
@@ -53,15 +53,15 @@ nav ul{
     list-style: none;
     align-items: center;
 }
-nav ul li{
+/* nav ul li{
     margin-left: 1rem;
     margin-right: 1rem;
-}
+} */
 .chat{
     height: 60px;
     padding: 10px 20px;
     font-size: 18px;
-    word-spacing: 10px;
+    word-spacing: 5px;
     background-color: #0145FE;
     color: white;
     border-radius: 20px;
@@ -163,10 +163,12 @@ nav ul li{
     gap: 3rem;
     justify-content: space-between;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
+    justify-content: flex-start;
 }
 .two div{
+    width: calc(100%/3);
     font-family: Roboto Mono;
     font-size: 16px;
     font-weight: 500;
@@ -206,11 +208,18 @@ nav ul li{
     width: 175px;
     height: 80px;
     object-fit: contain;
-    animation: logoss 5s linear infinite ;
+    animation: logoss 10s linear infinite ;
+    animation-delay: 3s;
+}
+.gg{
+    width: 150px;
 }
 @keyframes logoss {
+    0%{
+        transform: translateX(0px);
+    }
     100%{
-        transform: translateX(-1450px);
+        transform: translateX(-3050px);
     }
 }
 .four{
@@ -269,6 +278,57 @@ nav ul li{
 /* .five hr{
     border: 1px solid #5B9FFF
 } */
+/* videos */
+.videos{
+    display: flex;
+    background-color: #00004A;
+    color: white;
+    padding-block: 16px;
+    margin-top: 4rem;
+}
+.videos article{
+    width: 55%;
+    /* border: 1px solid white; */
+    padding: 96px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.videos article h2{
+    font-family: hanson;
+    font-size: 30px;
+}
+.videos article span{
+    display: flex;
+    gap: 2rem;
+}
+.videos article span button{
+    padding: 10px;
+    color: white;
+    background: transparent;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.videos article span button a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.videos article span button img{
+    width: 30px;
+}
+.videos main{
+    width: 45%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+}
+.videos main img{
+    width: 370px;
+}
 .mentor h1,.mentor h2 .five h1,.five_b h1,.f-top h1, .six h1{
     font-family: Roboto Mono;
     font-size: 32px;
@@ -773,22 +833,23 @@ footer li{
     line-height: 24px;
 }
 .contact h2{
-    font-size: 40px;
+    font-size: 22px;
     font-weight: 900;
     line-height: 60px;
     color: #00004A;
-    letter-spacing: 0.4em;
-    padding-bottom: 4rem;
+    letter-spacing: 0.2em;
 }
 .contact h5{
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 28px;
     font-family: Roboto Mono;
     letter-spacing: 0.1em;
     padding-bottom: 1rem;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
 }
 .contact a{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     line-height: 60px;
     text-decoration: none;
@@ -800,7 +861,7 @@ footer li{
 }
 .contact span{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 .contact span img{
     width: 30px;
@@ -821,6 +882,11 @@ footer{
 }
 .foot1 div{
     display: flex;
+    gap: 3rem;
+}
+.foot1 div a{
+    text-decoration: none;
+    color: white;
 }
 .foot1 ul{
     list-style: none;
@@ -836,13 +902,9 @@ footer{
     align-items: center;
     padding-top: 1rem;
 }
-.foot2 span{
-    padding: 0px 0px;
-    /* border: 1px solid white; */
-    /* border-radius: 80%; */
-    /* height: 20px; */
-    width: 40px;
-    font-size: 30px;
+.foot2 span img{
+    width: 20px;
+    margin-bottom: -5px;
 }
 #slist li{
     font-size: 14px;

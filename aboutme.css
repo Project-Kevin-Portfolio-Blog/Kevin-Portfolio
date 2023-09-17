@@ -44,7 +44,7 @@ nav a{
     color: black;
 }
 nav a:hover{
-    font-size: 22px;
+    font-size: 20px;
     transition: 0.5s linear 0.1s;
     font-weight: 900;
 }
@@ -54,15 +54,15 @@ nav ul{
     list-style: none;
     align-items: center;
 }
-nav ul li{
+/* nav ul li{
     margin-left: 1rem;
     margin-right: 1rem;
-}
+} */
 .chat{
     height: 60px;
     padding: 10px 20px;
     font-size: 18px;
-    word-spacing: 10px;
+    word-spacing: 5px;
     background-color: #0145FE;
     color: white;
     border-radius: 20px;
@@ -138,6 +138,7 @@ nav ul li{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: calc(100%/2);
     box-shadow: 0px 0px 20px -10px #0145FE;
     /* gap: 1rem; */
 }
@@ -216,9 +217,13 @@ nav ul li{
     width: 175px;
     height: 80px;
     object-fit: contain;
-    animation: logoss 5s linear infinite ;
+    animation: logoss 10s linear infinite ;
+    animation-delay: 3s;
 }
 @keyframes logoss {
+    0%{
+        transform: translateX(0px);
+    }
     100%{
         transform: translateX(-1450px);
     }
@@ -571,6 +576,14 @@ footer{
     align-items: center;
     margin-bottom: 2rem;
 }
+.foot1 div{
+    display: flex;
+    gap: 3rem;
+}
+.foot1 div a{
+    text-decoration: none;
+    color: white;
+}
 .foot1 ul{
     list-style: none;
     display: flex;
@@ -585,13 +598,9 @@ footer{
     align-items: center;
     padding-top: 1rem;
 }
-.foot2 span{
-    padding: 1px 5px;
-    border: 1px solid white;
-    border-radius: 50%;
-    /* height: 20px; */
-    width: 40px;
-    font-size: 20px;
+.foot2 span img{
+    width: 20px;
+    margin-bottom: -5px;
 }
 
 
