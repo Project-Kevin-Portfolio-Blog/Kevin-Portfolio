@@ -97,6 +97,10 @@ nav ul{
     width: 256px;
     height: 60px;
 }
+.one button a{
+    text-decoration: none;
+    color: inherit;
+}
 .one header h3{
     content: HI IM;
     font-family: Noto Sans;
@@ -134,9 +138,8 @@ nav ul{
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
     width: 557px;
+    color: #5A5A5A;
 }
 
 .two{
@@ -289,14 +292,17 @@ nav ul{
 .videos article{
     width: 55%;
     /* border: 1px solid white; */
-    padding: 96px 64px;
+    padding: 64px 64px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 5rem;
+    justify-content: center;
+    /* justify-content: space-between; */
 }
 .videos article h2{
     font-family: hanson;
     font-size: 30px;
+    line-height: 50px;
 }
 .videos article span{
     display: flex;
@@ -327,7 +333,7 @@ nav ul{
     justify-content: center;
 }
 .videos main img{
-    width: 370px;
+    width: 570px;
 }
 .mentor h1,.mentor h2 .five h1,.five_b h1,.f-top h1, .six h1{
     font-family: Roboto Mono;
@@ -846,7 +852,7 @@ footer li{
     letter-spacing: 0.1em;
     padding-bottom: 1rem;
     font-weight: 300;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Roboto Mono;
 }
 .contact a{
     font-size: 30px;
@@ -879,6 +885,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    font-family: Roboto mono;
 }
 .foot1 div{
     display: flex;
