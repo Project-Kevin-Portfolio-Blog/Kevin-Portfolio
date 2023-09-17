@@ -286,13 +286,12 @@ nav ul{
     display: flex;
     background-color: #00004A;
     color: white;
-    padding-block: 16px;
     margin-top: 4rem;
 }
 .videos article{
     width: 55%;
     /* border: 1px solid white; */
-    padding: 64px 64px;
+    padding: 80px 64px;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -887,6 +886,11 @@ footer{
     margin-bottom: 2rem;
     font-family: Roboto mono;
 }
+.foot1 .flogo{
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+}
 .foot1 div{
     display: flex;
     gap: 3rem;
@@ -908,6 +912,8 @@ footer{
     color: white;
     align-items: center;
     padding-top: 1rem;
+    font-family: hanson;
+    letter-spacing: .1em;
 }
 .foot2 span img{
     width: 20px;

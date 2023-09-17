@@ -168,6 +168,7 @@ nav ul{
     text-align: center;
     font-family: Roboto Mono;
     position: relative;
+    border-radius: 10px;
 }
 /* .gida::before{
     content: '';
@@ -231,6 +232,10 @@ nav ul{
 .blogsec{
     margin-top: 4rem;
 }
+#blogp{
+    font-size: 20px;
+    line-height: 32px;
+}
 #readBlog{
     line-height: 100px;
     color: white;
@@ -239,6 +244,7 @@ nav ul{
     text-decoration: none;
     background: #000086;
     padding: 15px 30px;
+    border-radius: 10px;
 }
 .one div {
     margin: 2rem 0;
@@ -305,7 +311,9 @@ select{
 .two main div{
     display: flex;
     overflow-x: hidden;
-    width: 60%;
+    gap: 20px;
+    /* background-color: gainsboro; */
+    width: 100%;
     margin: auto;
     border-radius: 10px;
 }
@@ -314,110 +322,9 @@ select{
     height: 426px;
 } */
 @keyframes slides {
-    0%,2.5%{
-        transform: translateX(0px);
-        /* opacity: .4; */
-        /* filter: brightness(50%); */
-    }
-    5%,10%{
-        transform: translateX(-100%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    12.5%,15%{
-        transform: translateX(-200%);
-        /* opacity: .4; */
-        /* filter: brightness(50%); */
-    }
-    17.5%, 20%{
-        transform: translateX(-300%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    22.5%, 25%{
-        transform: translateX(-400%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    27.5%, 30%{
-        transform: translateX(-500%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    32.5%, 35%{
-        transform: translateX(-600%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    37.5%, 40%{
-        transform: translateX(-700%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    42.5%, 45%{
-        transform: translateX(-800%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    47.5%, 50%{
-        transform: translateX(-900%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    52.5%, 55%{
-        transform: translateX(-1000%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    57.5%, 60%{
-        transform: translateX(-1100%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    62.5%, 65%{
-        transform: translateX(-1200%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    67.5%, 70%{
-        transform: translateX(-1300%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    72.5%, 75%{
-        transform: translateX(-1400%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    77.5%, 80%{
-        transform: translateX(-1500%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    82.5%, 85%{
-        transform: translateX(-1600%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    87.5%, 90%{
-        transform: translateX(-1700%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    92.5%, 95%{
-        transform: translateX(-1800%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
-    97.5%{
-        transform: translateX(-1900%);
-        opacity: 1;
-        /* filter: brightness(50%); */
-    }
     100%{
         transform: translateX(-1900%);
     }
-    
 }
 /* .six{
     padding-top: 5rem;
@@ -577,6 +484,11 @@ footer{
     margin-bottom: 2rem;
     font-family: Roboto mono;
 
+}
+.foot1 .flogo{
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
 }
 .foot1 div{
     display: flex;
