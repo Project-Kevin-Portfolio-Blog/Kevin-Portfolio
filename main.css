@@ -303,6 +303,10 @@ nav ul{
     font-size: 30px;
     line-height: 50px;
 }
+.videos article small{
+    font-family: hanson;
+    font-size: 22px;
+}
 .videos article span{
     display: flex;
     gap: 2rem;
@@ -558,6 +562,7 @@ nav ul{
     margin-right: 1px;
     border-radius: 10px;
     padding: 3px 10px;
+    text-transform: uppercase;
 }
 .date{
     font-family: 'Roboto Mono';
@@ -807,6 +812,11 @@ footer li{
     font-family: Roboto Mono;
     border-radius: 10px;
     border: none;
+}
+.news small{
+    font-family: Roboto Mono;
+    color: red;
+    font-size: 20px;
 }
 #sub{
     background-color: #00004A;

@@ -284,11 +284,16 @@ select{
     gap: 1rem;
     justify-content: space-between;
     margin-bottom: 3rem;
+    border-radius: 10px;
+    overflow-x: hidden;
 }
 .two main img{
     width: 110%;
-    animation: slides 80s linear infinite;
+    /* animation: slides 80s linear infinite; */
 }
+/* .two main img:hover{
+    animation-play-state: paused;
+} */
 .two main span{
     text-align: center;
     font-family: Roboto mono;
@@ -310,12 +315,16 @@ select{
 }
 .two main div{
     display: flex;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     gap: 20px;
     /* background-color: gainsboro; */
-    width: 100%;
+    min-width: fit-content;
     margin: auto;
     border-radius: 10px;
+    animation: slides 80s linear infinite;
+}
+.two main div:hover{
+    animation-play-state: paused;
 }
 /* #gal1{
     width: 720px;
