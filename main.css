@@ -504,6 +504,7 @@ nav ul{
     width: 500px;
     height: 250px;
     object-fit: cover;
+    border-radius: 10px;
 }
 .f-right{
     display: flex;
@@ -528,6 +529,7 @@ nav ul{
 .f-right main img{
     width: 200px;
     height: 120px;
+    border-radius: 10px;
 }
 .f-right main p{
     font-family: 'Roboto Mono';
@@ -564,6 +566,9 @@ nav ul{
     border-radius: 10px;
     padding: 3px 10px;
     text-transform: uppercase;
+}
+#link0,#link1,#link2,#link3{
+    cursor: pointer;
 }
 .date{
     font-family: 'Roboto Mono';
@@ -801,7 +806,7 @@ footer li{
     flex-direction: column;
     gap: 2rem;
 }
-.news main div{
+.news main form{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -943,14 +948,15 @@ footer{
     right: 0;
     bottom: 0;
     height: fit-content;
-    width: 40%;
+    width: 80%;
     margin: auto;
     /* border: 1px solid; */
-    padding: 32px;
+    padding: 64px;
     background-color: white;
     font-family: hanson;
     line-height: 34px;
     font-size: 22px;
+    box-shadow: 0px 0px 30px 10px #000086;
 }
 .subAlert button{
     padding: 10px 20px;
@@ -959,6 +965,7 @@ footer{
     margin-top: 1rem;
     border: none;
     border-radius: 10px;
+    margin-top: 3rem;
 }
 @media (max-width:435px){
     html{
@@ -1035,6 +1042,9 @@ footer{
         box-shadow: 0px 4px 10px -5px #000086;
         transform: translateX(100%);
     }
+    nav ul li{
+        padding-left: 1.5rem;
+    }
     .chat{
         font-size: 14px;
         padding: 20px 30px;
@@ -1054,7 +1064,7 @@ footer{
         border-radius: 20px;
         border: none;
     }
-    nav, .one,.three,.two_1,.two_2,.four,.mentor,.five,.six,.contact,.news,footer{
+    nav, .one,.three,.two_1,.two_2,.four,.mentor,.videos,.five,.six,.contact,.news,footer{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         padding-top: 1rem;
@@ -1109,7 +1119,7 @@ footer{
     .one p{
         font-size: 14px;
         width: 100%;
-        margin-top: -1.5rem;
+        margin-top: -.5rem;
         line-height: 28px;
     }
     .one main img{
@@ -1142,7 +1152,8 @@ footer{
         /* border: 1px solid white; */
         border-radius: 10px;
         padding: 24px;
-        background-color: rgba(255, 255, 240, 0.1)
+        background-color: rgba(255, 255, 240, 0.1);
+        width: 100%;
     }
     .two div img{
         margin-bottom: 5px;
@@ -1174,8 +1185,48 @@ footer{
     }
     @keyframes logo {
         100%{
-            transform: translateX(-890px);
+            transform: translateX(-1290px);
         }
+    }
+    .videos{
+        flex-direction: column;
+        margin-top: -2rem;
+        padding-top: 2rem;
+        background-image: url(./images/kev4.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right 0;
+    }
+    .videos article{
+        width: 100%;
+        padding: 10px;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+    .videos article h2{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .videos article small{
+        font-size: 14px;
+    }
+    .videos article span{
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .videos article span button{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .videos article span button a{
+        gap: 5px;
+    }
+    .videos main{
+        width: 100%;
+        display: none;
+    }
+    .videos main img{
+        width: 300px;
     }
     .four{
         padding-top: 4rem;
@@ -1423,8 +1474,9 @@ footer{
         z-index: 1;
         /* display: none; */
     }
-    .foot2 span{
-        font-size: 16px;
+    .foot2 small{
+        font-size: 12px !important;
+        text-align: center;
     }
     .foot1 div{
         flex-direction: column;

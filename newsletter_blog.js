@@ -32,20 +32,21 @@ fetch('https://blogapi-31c0.onrender.com/blogs')
 
 
 // newsletter form submit
-const submit = document.getElementById('sub')
+const submit = document.getElementById('form')
 const fullname = document.getElementById('name')
 const email = document.getElementById('email')
 const newsAlert = document.getElementById('newsAlert')
 
 
-const data = {
+let data = {
     fullname: fullname.value,
     email: email.value
 }
 const regAlerrt = document.getElementById('regAlert')
 const regClose = document.getElementById('regClose')
 
-submit.addEventListener('click', () => {
+submit.addEventListener('submit', (e) => {
+    e.preventDefault()
     console.log(fullname.value, email.value)
     newsAlert.textContent = ''
     if (fullname.value.length > 2 && email.value.length > 2) {
@@ -54,7 +55,10 @@ submit.addEventListener('click', () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify({
+                fullname: fullname.value,
+                email: email.value
+            })
         })
         .then(res=>{
             console.log(res)
