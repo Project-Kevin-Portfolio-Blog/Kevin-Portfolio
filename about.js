@@ -56,7 +56,7 @@ slides.addEventListener('touchstart', ()=>{
     slides.style.cssText = 'animation-play-state: paused'
 })
 slides.addEventListener('touchend', ()=>{
-    slides.style.cssText = 'animation-play-state: paused'
+    slides.style.cssText = 'animation-play-state: running'
 })
 
 // let imgText = document.querySelectorAll('.imgtext')
