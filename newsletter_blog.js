@@ -23,7 +23,7 @@ fetch('https://blogapi-31c0.onrender.com/blogs')
             tags.textContent = item.tagOne
             tagTwos.textContent = item.tagTwo
             tagThrees.textContent = item.tagThree
-            imgs.setAttribute('src', item.image)
+            imgs.setAttribute('src', item.image ? item.image : '/images/blog3.png')
         })
     })
     .catch(err => {
@@ -36,6 +36,7 @@ const submit = document.getElementById('form')
 const fullname = document.getElementById('name')
 const email = document.getElementById('email')
 const newsAlert = document.getElementById('newsAlert')
+
 
 
 let data = {

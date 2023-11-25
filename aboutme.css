@@ -227,6 +227,7 @@ nav ul {
   animation: logoss 10s linear infinite;
   animation-delay: 3s;
 }
+
 @keyframes logoss {
   0% {
     transform: translateX(0px);

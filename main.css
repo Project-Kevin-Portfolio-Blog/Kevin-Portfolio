@@ -864,7 +864,7 @@ footer li{
     font-size: 18px;
     line-height: 28px;
     font-family: Roboto Mono;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     padding-bottom: 1rem;
     font-weight: 300;
     font-family: Roboto Mono;
@@ -875,10 +875,10 @@ footer li{
     line-height: 60px;
     text-decoration: none;
     color: black;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     font-family: Roboto Mono;
     letter-spacing: 0.1em;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 .contact span{
     display: flex;
@@ -1189,17 +1189,17 @@ footer{
         }
     }
     .videos{
-        flex-direction: row;
+        flex-direction: row-reverse;
         margin-top: -2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: -1rem;
+        padding-bottom: 0rem;
         /* background-image: url(./images/kev4.png); */
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right 0%;
     }
     .videos article{
-        width: 70%;
+        width: 80%;
         padding: 10px;
         gap: 1rem;
         z-index: 2;
@@ -1223,7 +1223,7 @@ footer{
         gap: 5px;
     }
     .videos main{
-        width: 100%;
+        width: 40%;
         z-index: 1;
         /* display: none; */
     }

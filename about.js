@@ -8,6 +8,7 @@ const menuclose = document.getElementById('close')
 const menuslidein = document.getElementById('navbar')
 let phoneSize1 = window.matchMedia('(max-width: 435px)')
 let NewsWriteUp = document.querySelector('#newsWU')
+const slides = document.querySelector('#slideshow')
 
 
 menuopen.addEventListener('click', () => {
@@ -34,7 +35,7 @@ menuclose.addEventListener('click', () => {
     }, 500)
     console.log('first')
 })
-
+ 
 
 if(phoneSize1.matches){
     window.onscroll = function () {
@@ -49,6 +50,14 @@ if(phoneSize1.matches){
 }else {
     console.log('firsts')
 }
+
+
+slides.addEventListener('touchstart', ()=>{
+    slides.style.cssText = 'animation-play-state: paused'
+})
+slides.addEventListener('touchend', ()=>{
+    slides.style.cssText = 'animation-play-state: paused'
+})
 
 // let imgText = document.querySelectorAll('.imgtext')
 
