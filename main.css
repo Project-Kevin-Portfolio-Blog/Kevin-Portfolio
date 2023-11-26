@@ -967,7 +967,7 @@ footer{
     border-radius: 10px;
     margin-top: 3rem;
 }
-@media (max-width:435px){
+@media (max-width:620px){
     html{
         overflow-x: hidden;
     }
@@ -1197,9 +1197,10 @@ footer{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right 0%;
+        gap: 30%;
     }
     .videos article{
-        width: 80%;
+        width: 65%;
         padding: 10px;
         gap: 1rem;
         z-index: 2;
@@ -1216,14 +1217,17 @@ footer{
         margin-top: 2rem;
     }
     .videos article span button{
-        font-size: 12px;
+        font-size: 8px;
         padding: 5px;
     }
     .videos article span button a{
         gap: 5px;
     }
+    .videos article span button a img{
+        width: 20px;
+    }
     .videos main{
-        width: 40%;
+        width: 10%;
         z-index: 1;
         /* display: none; */
     }

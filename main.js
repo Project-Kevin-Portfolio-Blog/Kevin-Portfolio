@@ -1,10 +1,3 @@
-// window.onload = ()=>{
-//     return load 
-// }
-
-// function load (){
-//     document.querySelector('body').style.display = 'none'
-// }
 
 let phoneSize1 = window.matchMedia('(max-width: 435px)')
 const menuopen = document.getElementById('menu')
