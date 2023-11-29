@@ -340,7 +340,7 @@ select {
 }
 @keyframes slides {
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-97%);
   }
 }
 .news {
@@ -662,12 +662,23 @@ footer {
   }
   .two main div {
     width: 100%;
+    animation: slides 100s linear infinite;
+  }
+  @keyframes slides {
+    100% {
+      transform: translateX(-11500px);
+    }
   }
   .two main span {
     font-size: 10px;
     letter-spacing: 0.4em;
     line-height: 22px;
   }
+  #gal1{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
   #gall2 {
     display: none;
   }
